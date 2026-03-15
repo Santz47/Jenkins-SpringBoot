@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f tp2-container || true
-                docker run -d -p 8080:8080 --name tp2-container tp2-app:latest
+                docker run -d -p 8081:8080 --name tp2-container tp2-app:latest
                 '''
             }
         }
